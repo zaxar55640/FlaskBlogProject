@@ -1,0 +1,18 @@
+#main {
+    position: relative;
+}
+
+ul.mainmenu {
+	list-style: none;
+	background: #FFB6C1;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 20px;
+	overflow: hidden;
+}
+ul.mainmenu li {
+	float: left;
+	margin: 18px 40px 0 50px;
+}

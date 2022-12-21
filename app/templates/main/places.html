@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% block body %}
+<div class="container">
+    <h1>{{info}}</h1>
+    {% if articles|length > 0%}
+        {% for pl in places %}
+        <div class="alert alert_info">
+            <h2>{{ pl.title }}</h2>
+            <p><b>Дата: {{pl.date.date()}}</b></p>
+            <a href="/places/{{ pl.id }}" class="btn btn-warning">Детальнее</a>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>Нет статей на сайте</p>
+    {% endif%}
+</div>
+{% endblock %}

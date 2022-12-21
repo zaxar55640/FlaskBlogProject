@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+{% block body %}
+<div id="main">
+<section>
+    <img src="../../static/main/img/map.png" id="mapp" alt="map" usemap="#map">
+    <map name="map">
+        <area shape="poly" coords="583,483,596,456, 611, 452, 636,475, 623,485, 621,504, 606,507, 607,496, 577, 501" href="/mapsinfo">
+        <area shape="rect" coords="0, 0, 500, 500" href="/mapsinfo">
+        <area shape="circle" coords="275,75,75" href="base.html">
+    </map>
+</section>
+</div>
+{% endblock %}
